@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+}
+
+.navbar li a.active,
+.navbar li a.active:hover,
+.navbar li a.active:focus {
+    background-color: #4189C7;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        position: inherit;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        height: 100%;
+        width: calc(25% - 20px);
+        border-radius: 0px;
+    }
+    .navbar ul, .navbar li {
+        float: none;
+    }
+    .navbar li a {
+        border-radius: 4px;
+    }
+}
